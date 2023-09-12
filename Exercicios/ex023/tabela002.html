@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: lightgrey;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes:
+        table
+        caption(legenda da tabela)    
+        thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">203 062 512</td>
+            </tr>
+
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo quia officiis voluptatem est molestias vel sint consectetur praesentium rerum, quibusdam quaerat ea veniam veritatis quae. Itaque quos voluptatibus eaque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio praesentium officia cum, quas doloremque porro temporibus quae pariatur nostrum voluptas quos ex tempora tempore deleniti officiis animi totam! Quo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis obcaecati cumque consequatur molestias soluta vel, eligendi fuga, fugiat qui, vero perspiciatis. Est adipisci libero nostrum eius, soluta praesentium qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, blanditiis nemo quo possimus aliquam temporibus asperiores nihil perferendis excepturi velit, at adipisci officia! Deserunt assumenda iusto doloremque quisquam ipsam suscipit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit minus commodi voluptatem quam? Natus ipsum quidem architecto. Vitae expedita eos ducimus ex quod ab, id sunt asperiores ea unde!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quidem corporis deleniti pariatur itaque autem laborum impedit consectetur magnam vitae cumque ipsam, eum animi reiciendis nihil, exercitationem laboriosam perspiciatis non!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo quia officiis voluptatem est molestias vel sint consectetur praesentium rerum, quibusdam quaerat ea veniam veritatis quae. Itaque quos voluptatibus eaque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio praesentium officia cum, quas doloremque porro temporibus quae pariatur nostrum voluptas quos ex tempora tempore deleniti officiis animi totam! Quo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis obcaecati cumque consequatur molestias soluta vel, eligendi fuga, fugiat qui, vero perspiciatis. Est adipisci libero nostrum eius, soluta praesentium qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, blanditiis nemo quo possimus aliquam temporibus asperiores nihil perferendis excepturi velit, at adipisci officia! Deserunt assumenda iusto doloremque quisquam ipsam suscipit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit minus commodi voluptatem quam? Natus ipsum quidem architecto. Vitae expedita eos ducimus ex quod ab, id sunt asperiores ea unde!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quidem corporis deleniti pariatur itaque autem laborum impedit consectetur magnam vitae cumque ipsam, eum animi reiciendis nihil, exercitationem laboriosam perspiciatis non!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo quia officiis voluptatem est molestias vel sint consectetur praesentium rerum, quibusdam quaerat ea veniam veritatis quae. Itaque quos voluptatibus eaque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio praesentium officia cum, quas doloremque porro temporibus quae pariatur nostrum voluptas quos ex tempora tempore deleniti officiis animi totam! Quo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis obcaecati cumque consequatur molestias soluta vel, eligendi fuga, fugiat qui, vero perspiciatis. Est adipisci libero nostrum eius, soluta praesentium qui.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, blanditiis nemo quo possimus aliquam temporibus asperiores nihil perferendis excepturi velit, at adipisci officia! Deserunt assumenda iusto doloremque quisquam ipsam suscipit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit minus commodi voluptatem quam? Natus ipsum quidem architecto. Vitae expedita eos ducimus ex quod ab, id sunt asperiores ea unde!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quidem corporis deleniti pariatur itaque autem laborum impedit consectetur magnam vitae cumque ipsam, eum animi reiciendis nihil, exercitationem laboriosam perspiciatis non!</p>
+</body>
+</html>
