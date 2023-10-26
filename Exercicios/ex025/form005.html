@@ -10,17 +10,23 @@
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="">
         <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="ismas"><label for="ismas"> Masculino</label><br>
+            <input type="radio" name="sexo" id="isfem"><label for="isfem"> Feminino</label><br>
+            <input type="radio" name="sexo" id="isnd" checked><label for="isnd"> Não informado</label><br>
+        </fieldset>
+        <fieldset>
             <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="esporte" id="ifutebol">Futebol<br>
-            <input type="checkbox" name="esporte" id="ifutebol">Ciclismo<br>
-            <input type="checkbox" name="esporte" id="ifutebol">Natação<br>
-            <input type="checkbox" name="esporte" id="ifutebol">Tênis<br>
-            <input type="checkbox" name="esporte" id="ifutebol">Saltos Ornamentais<br>
-            <input type="checkbox" name="esporte" id="ifutebol">Corrida<br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="escic" id="iescic"> <label for="iescic">Ciclismo</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+            <input type="checkbox" name="essal" id="iessal"> <label for="iessal">Saltos Ornamentais</label><br>
+            <input type="checkbox" name="escor" id="iescor"> <label for="iescor">Corrida</label><br>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
-            <input type="reset" value="Li,par">
+            <input type="reset" value="Limpar">
         </p>
     </form>
     
